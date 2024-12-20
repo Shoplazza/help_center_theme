@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){var notificationElm=document.querySelector(".notification-error");notificationElm&&notificationElm.previousElementSibling&&"function"==typeof notificationElm.previousElementSibling.focus&&notificationElm.previousElementSibling.focus()}));
