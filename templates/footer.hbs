@@ -518,6 +518,19 @@ footerWrapper.insertBefore(tempDiv, footerWrapperNode);
   }
 </style>
 <script>
+  $(function(){
+    const images = document.querySelectorAll('img')
+    const title = document.querySelector('.article__title')
+    images?.forEach((image, index)=> {
+      if(image.alt !== "") return
+ 
+      if(title?.textContent) return image.alt = `${title.textContent.trim()}-${index}`
+      
+      image.alt = image.src
+    })
+  })()
+</script>
+<script>
   const wechatBox = document.querySelectorAll('.sider_item')[1];
   const wechatDOM = document.querySelector('.wechat');
     console.log(wechatDOM);
@@ -714,23 +727,4 @@ try {
   }
 }
 </script>
-<script>
-  window.onload = function(){
-    const translationIcon = document.querySelector('.nav_link img.icon')
-    if(!translationIcon) return
-    translationIcon.alt = "i18-icon"
-  }
-</script>
-<script>
-  window.onload = function(){
-    const images = document.querySelectorAll('img')
-    const title = document.querySelector('.article__title')
-    images?.forEach((image, index)=> {
-      if(image.alt !== "") return
- 
-      if(title?.textContent) return image.alt = `${title.textContent.trim()}-${index}`
-      
-      image.alt = image.src
-    })
-  }
-</script>
+
