@@ -527,7 +527,6 @@ home_page_title.forEach(item=>{
    <h2 class="block-list-title row">${language=='zh-cn'?item.zh_firstTitle:item.en_firstTitle}</h2>
   <ul class="row block-list">
   `
-  console.log("item>>>>>[]", item);
   item.ul_content.forEach(res => {
     html+= `<li class="cate-item column--sm-6 block-list-item" id="category-${res.id}">
     <a class="block-list-item__link" href="${res.name =='Shoplazza博客'?zh_cn_blog:res.name =='Shoplazza Blogs'? en_ch_blog : res.html_url}">
