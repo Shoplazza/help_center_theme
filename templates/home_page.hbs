@@ -357,6 +357,35 @@
   <script>
     var language = LotusUtils.getLocale();
 $.getJSON(`/api/v2/help_center/${language}/categories.json`).done((response) => {
+  const blogInfo = language === 'zh-cn' ? {
+      "id": 18397678144921,
+      "url": "https://shoplazzahelp.zendesk.com/api/v2/help_center/zh-cn/categories/18397678144921.json",
+      "html_url": "https://helpcenter.shoplazza.com/hc/zh-cn/categories/18397678144921",
+      "position": 22,
+      "created_at": "2023-05-11T03:13:55Z",
+      "updated_at": Date(),
+      "name": "Shoplazza博客",
+      "description": "浏览我们的博客，获取关于电子商务的广泛话题，包括市场趋势、实用技巧和行业见解。通过获取最新的电子商务新闻和成功故事，保持领先地位。",
+      "locale": "zh-cn",
+      "source_locale": "en-us",
+      "outdated": false
+  } : {
+            "id": 18397678144921,
+            "url": "https://shoplazzahelp.zendesk.com/api/v2/help_center/en-us/categories/18397678144921.json",
+            "html_url": "https://helpcenter.shoplazza.com/hc/en-us/categories/18397678144921-Shoplazza-Blogs",
+            "position": 22,
+            "created_at": "2023-05-11T03:13:55Z",
+            "updated_at": "2025-02-24T01:50:59Z",
+            "name": "Shoplazza Blogs",
+            "description": "Stay updated with our blogs on e-commerce trends, tips, industry news, and success stories to remain competitive.",
+            "locale": "en-us",
+            "source_locale": "en-us",
+            "outdated": false
+        };
+  const hasBlogInfo = response.categories.some(item => item.id === 18397678144921);
+  if (!hasBlogInfo) {
+    response.categories.push(blogInfo);
+  }
 // 页面架构
 var home_page_title = [{
   en_firstTitle:'Start',
@@ -498,6 +527,7 @@ home_page_title.forEach(item=>{
    <h2 class="block-list-title row">${language=='zh-cn'?item.zh_firstTitle:item.en_firstTitle}</h2>
   <ul class="row block-list">
   `
+  console.log("item>>>>>[]", item);
   item.ul_content.forEach(res => {
     html+= `<li class="cate-item column--sm-6 block-list-item" id="category-${res.id}">
     <a class="block-list-item__link" href="${res.name =='Shoplazza博客'?zh_cn_blog:res.name =='Shoplazza Blogs'? en_ch_blog : res.html_url}">
