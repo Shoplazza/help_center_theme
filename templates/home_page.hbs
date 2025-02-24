@@ -392,7 +392,7 @@ var sellContent = ['在线商店','销售渠道','Online Store','Sales Channels'
 //var knowLedgeContent = ['店铺设置','在线商店','App安装','更多功能','Settings','Online store','Add app','More features']
 var knowLedgeContent = ['设置','商品','订单','营销','数据','客户','应用市场','账户管理','Settings','Products','Orders','Marketing and Promotions','Data Analytics','Customers','Add App','Account Management',]
 var FAQContent = ['支付','营销','应用市场常见问题','更多常见问题','Payment','Marketing','Questions about apps','More questions']
-var moreContent = ['合作伙伴','Partners']
+var moreContent = ['合作伙伴', 'Shoplazza博客', 'Partners', 'Shoplazza Blogs']
 var allCategoriesList = response.categories
 var conversionSymbol =function(oldStr)  {
    var reg = /[\（]/g,reg2 = /[\）]/g;
@@ -483,10 +483,9 @@ otherNameArr.forEach(item=> {
   } if(moreContent.includes(conversionSymbol(item.name))){
     if(item.name == '合作伙伴' || item.name  == 'Partners') {
       item.title_icon_img = 'https://static.staticdj.com/oss/operation/574bacc439244a598b81c7ae68054420.svg'
-    }
-    {{!-- else if(item.name == 'Shoplazza博客' || item.name == 'Shoplazza Blogs' ) {
+    } else if(item.name == 'Shoplazza博客' || item.name == 'Shoplazza Blogs' ) {
        item.title_icon_img = 'https://static.staticdj.com/oss/operation/6c6a593413b3a76b95f5ffc3ed414335.svg'
-    } --}}
+    }
     home_page_title[4].ul_content.push(item)
   }
 })
