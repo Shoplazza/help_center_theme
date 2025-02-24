@@ -2,7 +2,6 @@
 /* 隐藏Shoplazza updates 类别的搜索结果 */
 .result-article:has(li[title*="Shoplazza updates"]),.result-article:has(li[title*="Shoplazza更新"]),.search-results-filter__item:has(a[href*="category=13457070816153"]),.search-results-filter__item:has(a[href*="category=13457070816153"]){display:none!important;}
 </style>
-<<<<<<< HEAD
 <script>
 const localSearchFlag = window.location.pathname.includes("search");
 const hotSearchWords = document.querySelector('.search_words_wrapper');
@@ -12,24 +11,15 @@ if(localSearchFlag) {
   	hotSearchWords.style.display = "none";
 }
 </script>
-=======
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
 
 <div class="is-hidden" id="hidden_query">{{query}}</div>
 <div class="container search-results-page" data-search-results>
   <div class="search_result_input_res">
     <h1 class="search-results-count">{{t 'results' query=query count=results_count}}</h1>
-<<<<<<< HEAD
 <!--     <div class="correct-search container-inner search-box search-box--hero-unit" data-correct-search>
       {{!-- {{search instant=true placeholder=settings.search_placeholder}} --}}
       <div class="results_search_input_form"></div>
     </div> -->
-=======
-    <div class="correct-search container-inner search-box search-box--hero-unit" data-correct-search>
-      {{!-- {{search instant=true placeholder=settings.search_placeholder}} --}}
-      <div class="results_search_input_form"></div>
-    </div>
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
      {{#if subfilters}}
            <div class="search-results-select">
               <span class="search-results-title">Filter by</span>
@@ -61,17 +51,10 @@ if(localSearchFlag) {
               <li class="search-result result-{{type}} search_article_track">
                 <h3 class="h5 search-result__title">
                   <a href="{{url}}" class="search-result-link">{{title}}</a>
-<<<<<<< HEAD
 <!--                   {{#if vote_sum}}
                     <span class="search-result-votes"><span
                             class="fas fa-thumbs-up"></span> {{vote_sum}}</span>
                   {{/if}} -->
-=======
-                  {{#if vote_sum}}
-                    <span class="search-result-votes"><span
-                            class="fas fa-thumbs-up"></span> {{vote_sum}}</span>
-                  {{/if}}
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
                 </h3>
                 <ol class="breadcrumbs breadcrumbs--search-results">
                   {{#each path_steps}}
@@ -1039,7 +1022,6 @@ line-height: 150%; /* 21px */
   .block-list-title {
 text-align: center;
   }
-<<<<<<< HEAD
   .banner_style {
   	display: block !important;
   }
@@ -1094,6 +1076,4 @@ text-align: center;
   	font-size: 24px;
   }
 }
-=======
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
 </style>

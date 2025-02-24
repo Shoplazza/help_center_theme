@@ -1012,22 +1012,14 @@
           "type": "text",
           "description": "word 3 text EN",
           "label": "search word 3 text EN",
-<<<<<<< HEAD
           "value": "Payments"
-=======
-          "value": "Payment"
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
         },
         {
           "identifier": "search_word3_text_zh",
           "type": "text",
           "description": "word 3 text ZH",
           "label": "search word 3 text ZH",
-<<<<<<< HEAD
           "value": "POD定制利器—智能商品定制"
-=======
-          "value": "多市场功能"
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
         },
         {
           "identifier": "search_word3_link_en",
@@ -1041,55 +1033,35 @@
           "type": "text",
           "description": "word 3 link ZH",
           "label": "search word 3 link ZH",
-<<<<<<< HEAD
           "value": "https://helpcenter.shoplazza.com/hc/zh-cn/sections/41235150160537?utm_source=Helpcenter&utm_medium=Recommendedwords&utm_campaign=1216ProductCustomizer"
-=======
-          "value": "https://helpcenter.shoplazza.com/hc/zh-cn/sections/34130136355865-%E5%B8%82%E5%9C%BA"
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
         },
         {
           "identifier": "search_word3_tag_text",
           "type": "text",
           "description": "word 3 tag",
           "label": "search word 3 tag",
-<<<<<<< HEAD
           "value": "New"
-=======
-          "value": ""
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
         },
         {
           "identifier": "search_word3_tag_color",
           "type": "color",
           "description": "word3 tag color",
           "label": "search word3 tag color",
-<<<<<<< HEAD
           "value": "rgba(60, 141, 237, 1)"
-=======
-          "value": "#000"
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
         },
         {
           "identifier": "search_word4_text_en",
           "type": "text",
           "description": "word 4 text EN",
           "label": "search word 4 text EN",
-<<<<<<< HEAD
           "value": "Farida"
-=======
-          "value": "How do I integrate Apple Pay and Google Pay into my store?"
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
         },
         {
           "identifier": "search_word4_text_zh",
           "type": "text",
           "description": "word 4 text ZH",
           "label": "search word 4 text ZH",
-<<<<<<< HEAD
           "value": "零库存运营—一件代发"
-=======
-          "value": ""
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
         },
         {
           "identifier": "search_word4_link_en",
