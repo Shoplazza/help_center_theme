@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 <div class="home-page extra-style" data-home-page id="main-content">
   {{#if settings.toggle_custom_blocks}}
     <div class="container main-wrapper home-page__section custom-blocks" id="custom-blocks">
-=======
-<div class="home-page" data-home-page id="main-content">
-  {{#if settings.toggle_custom_blocks}}
-    <div class="container home-page__section custom-blocks" id="custom-blocks">
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
       <div class="container-inner">
         <div class="row custom-blocks__items" >
           {{#isnt settings.custom_block_1_type 'hidden'}}
@@ -363,10 +357,6 @@
   <script>
     var language = LotusUtils.getLocale();
 $.getJSON(`/api/v2/help_center/${language}/categories.json`).done((response) => {
-<<<<<<< HEAD
-console.log(response)
-=======
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
 // 页面架构
 var home_page_title = [{
   en_firstTitle:'Start',
@@ -397,11 +387,7 @@ var home_page_title = [{
 }]
 //定义菜单列表
 var startContent = ['开始建站','迁移到Shoplazza','Store Launch','Migrate to Shoplazza']
-<<<<<<< HEAD
 var solutionContent = ['支付解决方案','一代发货','物流','更多解决方案','税费解决方案','收款和税费','COD货到付款','Payment solution','Dropshipping','Shipping','More solution','Tax solution', 'Payment and Tax','Cash on Delivery','COD货到付款解决方案',"Cash on delivery solution","Point of Sale","Eyewear"]
-=======
-var solutionContent = ['支付解决方案','代发货','物流','更多解决方案','税费解决方案','收款和税费','COD货到付款','Payment solution','Dropshipping','Shipping','More solution','Tax solution', 'Payment and Tax','Cash on Delivery','COD货到付款解决方案',"Cash on delivery solution","Point of Sale","Eyewear"]
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
 var sellContent = ['在线商店','销售渠道','Online Store','Sales Channels']
 //var knowLedgeContent = ['店铺设置','在线商店','App安装','更多功能','Settings','Online store','Add app','More features']
 var knowLedgeContent = ['设置','商品','订单','营销','数据','客户','应用市场','账户管理','Settings','Products','Orders','Marketing and Promotions','Data Analytics','Customers','Add App','Account Management',]
@@ -428,7 +414,6 @@ otherNameArr.push(...expandNameArr)
 otherNameArr.forEach(item=> {
   if(startContent.includes(conversionSymbol(item.name))) {
     if(item.name == '开始建站' || item.name  == 'Store Launch') {
-<<<<<<< HEAD
       item.title_icon_img = 'https://static.staticdj.com/oss/operation/b021b345ae631617fc80a3d6149adb74.svg'
     }else if(item.name == '迁移到Shoplazza' || item.name == 'Migrate to Shoplazza' ) {
        item.title_icon_img = 'https://static.staticdj.com/oss/operation/a90041f7807490420efb380167a2de74.svg'
@@ -440,18 +425,6 @@ otherNameArr.forEach(item=> {
       item.title_icon_img = ' https://assets.shoplazza.com/oss/operation/fe0ab87b73e2f008cd3e5224334154d1.png'
     }else if(item.name == '一代发货' || item.name == 'Dropshipping' ) {
        item.title_icon_img = 'https://static.staticdj.com/oss/operation/3fbf9a11bd69a3d96f0c8c258f6b805b.svg'
-=======
-      item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/a78c732b07a404c6a2d617ddc634e702.png'
-    }else if(item.name == '迁移到Shoplazza' || item.name == 'Migrate to Shoplazza' ) {
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/9b603861b8a0086d5c8e0bd3cd382df9.png'
-    }
-    home_page_title[0].ul_content.push(item)
-  }if(solutionContent.includes(conversionSymbol(item.name))){
-    if(item.name == '支付解决方案' || item.name  == 'Payment solution') {
-      item.title_icon_img = ' https://assets.shoplazza.com/oss/operation/fe0ab87b73e2f008cd3e5224334154d1.png'
-    }else if(item.name == '代发货' || item.name == 'Dropshipping' ) {
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/3095ab05d95a24e94e58e32be28bb0e8.png'
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
     }else if(item.name == '物流' || item.name == 'Shipping' ) {
        item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/50b3fce2fcd418dfbb3e4c8e4f92f11a.png'
     }else if(conversionSymbol(item.name) == '更多解决方案' || conversionSymbol(item.name) == 'More solution' ) {
@@ -460,54 +433,33 @@ otherNameArr.forEach(item=> {
        item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/9b7a7214658f96073e1716d6f46766db.png'
     }
     else if(conversionSymbol(item.name) == '收款和税费' || conversionSymbol(item.name) == 'Payment and Tax' ) {
-<<<<<<< HEAD
        item.title_icon_img = 'https://static.staticdj.com/oss/operation/136665b62fab8b5de6c4b5f013b49433.svg'
     }
     else if(conversionSymbol(item.name) == 'COD货到付款' || conversionSymbol(item.name) == 'Cash on Delivery' ) {
        item.title_icon_img = 'https://static.staticdj.com/oss/operation/2e7d3764232d1a39fe65aab775624439.svg'
-=======
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/fe0ab87b73e2f008cd3e5224334154d1.png'
-    }
-    else if(conversionSymbol(item.name) == 'COD货到付款' || conversionSymbol(item.name) == 'Cash on Delivery' ) {
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/4afa490f5835f60b0c6ba65a3151cad2.png'
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
     }
     else if(conversionSymbol(item.name) == 'COD货到付款解决方案' || conversionSymbol(item.name) == 'Cash on delivery solution' ) {
        item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/82d78ff43e515820d2e959a368284be9.png'
     }
     else if(conversionSymbol(item.name) == 'Point of Sale') {
-<<<<<<< HEAD
        item.title_icon_img = 'https://static.staticdj.com/oss/operation/dcda778cd4754aec067eb406667b45db.svg'
     }
     else if(conversionSymbol(item.name) == 'Eyewear') {
        item.title_icon_img = 'https://static.staticdj.com/oss/operation/ac989cca007730a4aaca3cd808812d1c.svg'
-=======
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/008f59a001395f1a2cb3542f52ca8dfb.png'
-    }
-    else if(conversionSymbol(item.name) == 'Eyewear') {
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/5b2e29e4c75c3434d047414f752ba291.png'
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
     }
     conversionSymbol(item.name) =='更多解决方案' ? item.name = '更多' : conversionSymbol(item.name) == 'More solution' ? item.name = 'Expand' : item.name
     home_page_title[1].ul_content.push(item)
   } 
   if(sellContent.includes(conversionSymbol(item.name))){
     if(item.name == '在线商店' || item.name  == 'Online Store') {
-<<<<<<< HEAD
       item.title_icon_img = ' https://static.staticdj.com/oss/operation/523e87f31da6e8300128fb0341141c51.svg'
     }else if(item.name == '销售渠道' || item.name == 'Sales Channels' ) {
        item.title_icon_img = 'https://static.staticdj.com/oss/operation/42f340b21915f7caadc36d14225c4b66.svg'
-=======
-      item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/c377bae10b9e397add6cfb0191dae8c0.png'
-    }else if(item.name == '销售渠道' || item.name == 'Sales Channels' ) {
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/f46f958a7e8ec19a623ba86d25343f92.png'
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
     }
     home_page_title[2].ul_content.push(item)
   }
   if(knowLedgeContent.includes(conversionSymbol(item.name))){
      if(item.name == '设置' || item.name  == 'Settings') {
-<<<<<<< HEAD
       item.title_icon_img = 'https://static.staticdj.com/oss/operation/4fb94ca4c8e17124d24c12bf848340ed.svg'
     }else if(item.name == '商品' || item.name == 'Products' ) {
        item.title_icon_img = 'https://static.staticdj.com/oss/operation/22441ccd9b3efc522b41cef42127389f.svg'
@@ -523,23 +475,6 @@ otherNameArr.forEach(item=> {
        item.title_icon_img = 'https://static.staticdj.com/oss/operation/0e83c16c11894cac2b88eb255c35949a.svg'
     }else if(item.name == '账户管理' || item.name == 'Account Management' ) {
        item.title_icon_img = 'https://static.staticdj.com/oss/operation/1e96ad8406fe5c809f35665e11d48e80.svg'
-=======
-      item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/614e082c0b58d58e39ad1d7105f1c79b.png'
-    }else if(item.name == '商品' || item.name == 'Products' ) {
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/5bce1a658791cfde80da9cfe5d972726.png'
-    }else if(item.name == '订单' || item.name == 'Orders' ) {
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/b370635e407519bd749ff7fa0f8f9a72.png'
-    }else if(item.name == '营销' || item.name == 'Marketing and Promotions' ) {
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/748ed44536daaa83624c4438a3860ba8.png'
-    }else if(item.name == '数据' || item.name == 'Data Analytics' ) {
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/22bacfa57cca64365344295508154ac2.png'
-    }else if(item.name == '客户' || item.name == 'Customers' ) {
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/e33cc630a4acd8bab53f008623d8c8e5.png'
-    }else if(item.name == '应用市场' || item.name == 'Add App' ) {
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/57d5a936d9918d2d1f694e1f71af8650.png'
-    }else if(item.name == '账户管理' || item.name == 'Account Management' ) {
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/6b6b1c718a1f0ceb9e5a1e43a2a9bd1b.png'
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
     }
 
     conversionSymbol(item.name) =='更多功能' ? item.name = '更多' : conversionSymbol(item.name) == 'More features' ? item.name = 'Expand' : item.name
@@ -547,15 +482,9 @@ otherNameArr.forEach(item=> {
     home_page_title[3].ul_content.push(item)
   } if(moreContent.includes(conversionSymbol(item.name))){
     if(item.name == '合作伙伴' || item.name  == 'Partners') {
-<<<<<<< HEAD
       item.title_icon_img = 'https://static.staticdj.com/oss/operation/574bacc439244a598b81c7ae68054420.svg'
     }else if(item.name == 'Shoplazza博客' || item.name == 'Shoplazza Blogs' ) {
        item.title_icon_img = 'https://static.staticdj.com/oss/operation/6c6a593413b3a76b95f5ffc3ed414335.svg'
-=======
-      item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/96acf4f12ef8fb1470c6593a7dcebe10.png'
-    }else if(item.name == 'Shoplazza博客' || item.name == 'Shoplazza Blogs' ) {
-       item.title_icon_img = 'https://assets.shoplazza.com/oss/operation/b2a6ba4b12d33e5afe2169906bd29f01.png'
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
     }
     home_page_title[4].ul_content.push(item)
   }
@@ -565,34 +494,20 @@ var zh_cn_blog = 'https://www.shoplazza.cn/pages/blog'
 var en_ch_blog = 'https://blog.shoplazza.com'
 home_page_title.forEach(item=>{
   html+=`
-<<<<<<< HEAD
   <div class="container-inner cate-bottom">
    <h2 class="block-list-title row">${language=='zh-cn'?item.zh_firstTitle:item.en_firstTitle}</h2>
   <ul class="row block-list">
   `
   item.ul_content.forEach(res => {
     html+= `<li class="cate-item column--sm-6 block-list-item" id="category-${res.id}">
-=======
-  <div class="container-inner" style="margin-bottom:48px">
-   <h2 class="block-list-title">${language=='zh-cn'?item.zh_firstTitle:item.en_firstTitle}</h2>
-  <ul class="row block-list">
-  `
-  item.ul_content.forEach(res => {
-    html+= `<li class="column column column--sm-6 block-list-item" id="category-${res.id}">
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
     <a class="block-list-item__link" href="${res.name =='Shoplazza博客'?zh_cn_blog:res.name =='Shoplazza Blogs'? en_ch_blog : res.html_url}">
       <div class="block-list-item__icon">
         <img data-lotus-icon="${res.id}" class="home_page_title_icon" src="${res.title_icon_img}" alt="${res.name}"/>
       </div>
-<<<<<<< HEAD
       <div style="margin-left: 20px;">
 				<h2 class="h5 block-list-item__title">${res.name}</h2>
       	<p class="meta categoryDescription" >${res.description}</p>
       </div>
-=======
-      <h2 class="h5 block-list-item__title">${res.name}</h2>
-      <p class="meta categoryDescription" >${res.description}</p>
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
     </a>
   </li>`
   })
@@ -603,7 +518,6 @@ var new_block_list_content = document.getElementById('block-list')
     new_block_list_content.innerHTML= html
 })
   </script>
-<<<<<<< HEAD
 <style>
   .extra-style {
   	padding:8px 90px;
@@ -670,6 +584,3 @@ var new_block_list_content = document.getElementById('block-list')
 </style>
 </div>
 
-=======
-</div>
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e

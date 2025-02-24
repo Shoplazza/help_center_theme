@@ -3,11 +3,7 @@
 <div class="layout">
   <div class="layout__head">
     <header class="topbar is-hidden {{#is settings.hero_show_image 'noe'}}topbar--image{{/is}}" data-topbar>
-<<<<<<< HEAD
       <div class="topbar__nav container " data-topbar-nav>
-=======
-      <div class="topbar__nav container" data-topbar-nav>
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
         <div class="container-inner topbar__container-inner">
           <div class="topbar__inner">
             <div class="topbar__col clearfix">
@@ -35,7 +31,6 @@
                   {{#if settings.toggle_custom_link}}
                     <a href="{{#if settings.toggle_translations}}{{dc settings.topbar_custom_link_url}}{{else}}{{settings.topbar_custom_link_url}}{{/if}}" class="topbar__link">
                       {{#if settings.toggle_translations}}
-<<<<<<< HEAD
                       	<div class="nav_link">
                       		<img class="icon" src="https://assets.shoplazza.com/oss/operation/985ee1f0fbafdb3ee42c1a60d4013a91.svg" alt="{{settings.topbar_custom_link_title}}" />
                         	{{dc settings.topbar_custom_link_title}}
@@ -51,17 +46,6 @@
                   {{/if}}
                   {{#if alternative_locales}}
                     <div class="dropdown divider language-selector {{#if settings.toggle_flags}}language-selector--flags{{/if}}"
-=======
-                        {{dc settings.topbar_custom_link_title}}
-                      {{else}}
-                        {{settings.topbar_custom_link_title}}
-                      {{/if}}
-                    </a>
-                  {{/if}}
-                  {{link 'new_request' class='topbar__link'}}
-                  {{#if alternative_locales}}
-                    <div class="dropdown language-selector {{#if settings.toggle_flags}}language-selector--flags{{/if}}"
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
                          aria-haspopup="true">
                       <a data-url="{{current_locale.url}}" class="dropdown-toggle topbar__link">
                         {{current_locale.name}}
@@ -77,11 +61,7 @@
                     </div>
                   {{/if}}
                   {{#if signed_in}}
-<<<<<<< HEAD
                     <div id="user" class="dropdown user-info divider" aria-haspopup="true">
-=======
-                    <div id="user" class="dropdown user-info" aria-haspopup="true">
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
                       <button class="dropdown-toggle dropdown-toggle--user topbar__link">
                         {{user_avatar class="user-avatar user-avatar--topbar"}}
                         {{user_name class="user-name"}}
@@ -95,7 +75,6 @@
                     </div>
                   {{else}}
                     {{#link "sign_in" class='topbar__link'}}
-<<<<<<< HEAD
                   			<div style="margin: 0px">
 													{{#is current_locale.name '简体中文'}}
 														<a href="https://accounts.shoplazza.com/register" class="trail_btn">免费试用</a>
@@ -103,9 +82,6 @@
 														<a href="https://accounts.shoplazza.com/register" class="trail_btn">Free trial</a>
 													{{/is}}
                   			</div>
-=======
-                      {{t 'sign_in'}}
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
                     {{/link}}
                   {{/if}}
                 </div>
@@ -115,15 +91,9 @@
         </div>
       </div>
 
-<<<<<<< HEAD
       <div class="container home-banner">
         <div class="hero-unit is-hidden" data-hero-unit>
           <div class="container-inner home-search-container search-box search-box--hero-unit" data-search-box>
-=======
-      <div class="container">
-        <div class="hero-unit is-hidden" data-hero-unit>
-          <div class="container-inner search-box search-box--hero-unit" data-search-box>
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
             <div class="intro-title">
               {{#if settings.toggle_translations}}
                 {{dc settings.hero_title}}
@@ -159,7 +129,6 @@
                {{/if}}
 
                 {{#if settings.search_word3_text_en}}
-<<<<<<< HEAD
                   <a class="search_words_item search_words_item_en" {{#if settings.search_word3_link_en }}href="{{settings.search_word3_link_en}}"{{/if}} target="_blank">{{settings.search_word3_text_en}}
                 	{{#if settings.search_word3_tag_text }} <div class="search_words_tag" style="color: {{settings.search_word3_tag_color}}">{{settings.search_word3_tag_text}}</div>{{/if}}
                 </a>
@@ -193,36 +162,6 @@
                {{/if}}
 
                 {{#if settings.search_word6_text_en}}
-=======
-                  <a class="search_words_item search_words_item_en" {{#if settings.search_word3_link_en }}href="{{settings.search_word3_link_en}}"{{/if}} target="_blank">{{settings.search_word3_text_en}}</a>
-                  {{#if settings.search_word3_tag_text }} <div class="search_words_tag" style="color: {{settings.search_word3_tag_color}}">{{settings.search_word3_tag_text}}</div>{{/if}}
-               {{/if}}
-               {{#if settings.search_word3_text_zh}}
-                  <a class="search_words_item search_words_item_zh" {{#if settings.search_word3_link_zh }}href="{{settings.search_word3_link_zh}}"{{/if}} target="_blank">{{settings.search_word3_text_zh}}</a>
-                  {{#if settings.search_word3_tag_text }} <div class="search_words_tag" style="color: {{settings.search_word3_tag_color}}">{{settings.search_word3_tag_text}}</div>{{/if}}
-               {{/if}}
-
-                {{#if settings.search_word4_text_en}}
-                  <a class="search_words_item search_words_item_en" {{#if settings.search_word4_link_en }}href="{{settings.search_word4_link_en}}"{{/if}} target="_blank">{{settings.search_word4_text_en}}</a>
-                   {{#if settings.search_word4_tag_text }} <div class="search_words_tag" style="color: {{settings.search_word4_tag_color}}">{{settings.search_word4_tag_text}}</div>{{/if}}
-               {{/if}}
-               {{#if settings.search_word4_text_zh}}
-                  <a class="search_words_item search_words_item_zh" {{#if settings.search_word4_link_zh }}href="{{settings.search_word4_link_zh}}"{{/if}} target="_blank">{{settings.search_word4_text_zh}}</a>
-                   {{#if settings.search_word4_tag_text }} <div class="search_words_tag" style="color: {{settings.search_word4_tag_color}}">{{settings.search_word4_tag_text}}</div>{{/if}}
-               {{/if}}
-
-                {{#if settings.search_word5_text_en}}
-                  <a class="search_words_item search_words_item_en" {{#if settings.search_word5_link_en }}href="{{settings.search_word5_link_en}}"{{/if}} target="_blank">{{settings.search_word5_text_en}}</a>
-                  {{#if settings.search_word5_tag_text }} <div class="search_words_tag" style="color: {{settings.search_word5_tag_color}}">{{settings.search_word5_tag_text}}</div>{{/if}}
-               {{/if}}
-               {{#if settings.search_word5_text_zh}}
-                  <a class="search_words_item search_words_item_zh" {{#if settings.search_word5_link_zh }}href="{{settings.search_word5_link_zh}}"{{/if}} target="_blank">{{settings.search_word5_text_zh}}</a>
-                  {{#if settings.search_word5_tag_text }} <div class="search_words_tag" style="color: {{settings.search_word5_tag_color}}">{{settings.search_word5_tag_text}}</div>{{/if}}
-               {{/if}}
-
-
-               {{#if settings.search_word6_text_en}}
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
                   <a class="search_words_item search_words_item_en" {{#if settings.search_word6_link_en }}href="{{settings.search_word6_link_en}}"{{/if}} target="_blank">{{settings.search_word6_text_en}}</a>
                {{/if}}
                {{#if settings.search_word6_text_zh}}
@@ -291,10 +230,6 @@
                 {{#if settings.search_word15_text_zh}}
                   <a class="search_words_item search_words_item_zh" {{#if settings.search_word15_link_zh }}href="{{settings.search_word15_link_zh}}"{{/if}} target="_blank">{{settings.search_word15_text_zh}}</a>
                {{/if}}
-<<<<<<< HEAD
-=======
-
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
             </div>
 
 
@@ -315,22 +250,16 @@ var searchparams =  hiddenSearchQueryDom ?.innerText
     html+=`
      <input name="utf8" type="hidden" value="✓" autocomplete="off">
      <input name="filter_by" type="hidden" value="knowledge_base" autocomplete="off">
-<<<<<<< HEAD
      <div class="home-search">
             <input type="search" style="border: none;padding: 0 24px" name="query" id="query" value="${searchparams?searchparams:''}" placeholder="${language == 'zh-cn' ? '请输入您的问题...' : 'Type your question here...' }" autocomplete="off" aria-label="search_placeholder" class="input-search">
     <input type="submit" name="commit" class="btn-search" value="${language == 'zh-cn' ? '搜索' : 'Search' }">
      </div>
-=======
-     <input type="search" name="query" id="query" value="${searchparams?searchparams:''}" placeholder="${language == 'zh-cn' ? '请输入您的问题...' : 'Type your question here...' }" autocomplete="off" aria-label="search_placeholder">
-    <input type="submit" name="commit"  value="${language == 'zh-cn' ? '搜索' : 'Search' }">
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
     `
     html+='</form>'
     header_search_input_form.innerHTML= html
   });
   
 </script>
-<<<<<<< HEAD
 
 <script>
   const icon = document.querySelector('.icon');
@@ -377,10 +306,6 @@ var searchparams =  hiddenSearchQueryDom ?.innerText
   background-repeat: no-repeat;
 }
 .search:before {
-=======
-<style>
-  .search:before {
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
   position: absolute;
   top: 50%;
   width: 24px;
@@ -404,11 +329,7 @@ var searchparams =  hiddenSearchQueryDom ?.innerText
     line-height: 40px;
     border-radius: 40px;
     padding: 0 16px;
-<<<<<<< HEAD
     background-color: rgba(255, 255, 255, 0.80);
-=======
-    background-color: #eee;
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
     color: #555;
   }
 
@@ -434,7 +355,6 @@ var searchparams =  hiddenSearchQueryDom ?.innerText
     top:-16px;
 	  font-size:12px;
   }
-<<<<<<< HEAD
 </style>
 <style>
 .chatbot-buttons-container {
@@ -661,10 +581,5 @@ var searchparams =  hiddenSearchQueryDom ?.innerText
   	margin-left: 8px;
   }
 }
-=======
-
-  
-
->>>>>>> 36e0bca9382d2b53e24414367b17228cdeb5653e
 </style>
   <div class="layout__content">
